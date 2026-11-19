@@ -1,0 +1,104 @@
+.exp__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0 3rem;
+}
+
+.exp__stat {
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.exp__stat-num {
+    font-size: 2rem;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.exp__stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.exp__timeline {
+    position: relative;
+}
+
+.exp__card {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.exp__card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(var(--primary-rgb), 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.exp__card-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.exp__institution {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.6rem;
+}
+
+.exp__meta {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.exp__meta span {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.exp__highlights {
+    list-style: none;
+    padding: 0;
+}
+
+.exp__highlights li {
+    position: relative;
+    padding-left: 1rem;
+    font-size: 0.87rem;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+    line-height: 1.5;
+}
+
+.exp__highlights li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .exp__stats {
+        grid-template-columns: 1fr;
+    }
+
+    .exp__card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
